@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="tit-barra">
+            <h1 class="text-[40px]">Viaj<span>Arte</span></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
+                    <li><a href="../destinos/destinos.html">Destinos</a></li>
+                    <li><a href="../contactos/contactos.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        </section>
+    </header>
+    <main class="bg-white p-[10px]">
+        <section class="bg-[#dddddd] p-[10px] rounded-[20px]">
+            <h2 class="text-[30px] text-[rgb(0,132,255)]">Planificá tu aventura en Argentina</h2>
+            <p class="mb-4">Completá el formulario y nuestro equipo te ayudará a organizar el viaje perfecto. Responderemos dentro de las 24 horas.</p>
+            
+            <form id="form-viaje" class="bg-[#0663A8] text-white p-5 max-w-[600px] mx-auto rounded-[10px] font-['Segoe_UI']">
+                <h2 class="text-[30px] text-white mb-4">Formulario de Solicitud de Viaje</h2>
+            
+                <fieldset class="mb-6">
+                    <legend class="font-bold text-lg">Información Personal</legend>
+            
+                    <label for="nombre" class="block mb-1">Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+            
+                    <label for="email" class="block mb-1 mt-3">Email:</label>
+                    <input type="email" id="email" name="email" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+            
+                    <label for="telefono" class="block mb-1 mt-3">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Opcional" class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                </fieldset>
+                
+                <fieldset class="mb-6">
+                    <legend class="font-bold text-lg">Información del Viaje</legend>
+            
+                    <label for="destino" class="block mb-1">Destino:</label>
+                    <select id="destino" name="destino" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                        <option value="buenos_aires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="entre_rios">Entre Rios</option>
+                        <option value="jujuy">Jujuy</option>
+                        <option value="mendoza">Mendoza</option>
+                        <option value="misiones">Misiones</option>
+                        <option value="salta">Salta</option>
+                        <option value="san_juan">San juan</option>
+                        <option value="santa_cruz">Santa Cruz</option>
+                        <option value="tierra_del_fuego">Tierra del Fuego</option>
+                    </select>
+                    
+                    <label for="fecha" class="block mb-1 mt-3">Fecha de salida:</label>
+                    <input type="date" id="fecha" name="fecha" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    
+                    <label for="duracion" class="block mb-1 mt-3">Duración del viaje (días) *</label>
+                    <input type="number" id="duracion" name="duracion" min="1" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+            
+                    <label for="viajeros" class="block mb-1 mt-3">Número de viajeros *</label>
+                    <input type="number" id="viajeros" name="viajeros" min="1" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                </fieldset>
+                
+                <fieldset class="mb-6">
+                    <legend class="font-bold text-lg">Preferencias</legend>
+
+                    <label class="block mb-1 mt-3">Tipo de alojamiento:</label>
+                    <div class="space-y-2 mt-2">
+                        <div class="flex items-center">
+                            <input type="radio" id="hotel" name="alojamiento" value="hotel" required class="mr-2">
+                            <label for="hotel">Hotel</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="hostel" name="alojamiento" value="hostel" class="mr-2">
+                            <label for="hostel">Hostel</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="apartamento" name="alojamiento" value="apartamento" class="mr-2">
+                            <label for="apartamento">Apartamento</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="cabaña" name="alojamiento" value="cabaña" class="mr-2">
+                            <label for="cabaña">Cabaña</label>
+                        </div>
+                    </div>
+
+                    <label class="block mb-1 mt-4">Servicios adicionales:</label>
+                    <div class="space-y-2 mt-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="traslados" name="servicios" value="traslados" class="mr-2">
+                            <label for="traslados">Traslados</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="excursiones" name="servicios" value="excursiones" class="mr-2">
+                            <label for="excursiones">Excursiones</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="seguro" name="servicios" value="seguro" class="mr-2">
+                            <label for="seguro">Seguro de viaje</label>
+                        </div>
+                    </div>
+
+                    <label for="presupuesto" class="block mb-1 mt-3">Presupuesto aproximado (ARS)</label>
+                    <input type="number" id="presupuesto" name="presupuesto" min="0" step="500" class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <p class="text-sm mt-1"><small>Podés indicar un número estimado o dejarlo en blanco si no estás seguro.</small></p>
+                    
+                    <label for="notas" class="block mb-1 mt-3">Notas adicionales</label>
+                    <textarea id="notas" name="notas" rows="4" placeholder="Contanos cualquier detalle especial que desees agregar..." class="bg-[#052C3D] text-[cadetblue] w-full p-2.5 border-none font-sans"></textarea>
+                </fieldset>
+                
+                <div class="flex gap-4">
+                    <button type="submit" class="bg-[#4CB050] text-white px-4 py-3.5 rounded-[5px] w-[100px] border-none">Enviar</button>
+                    <button type="reset" class="bg-[#D82C28] text-white px-4 py-3.5 rounded-[5px] w-[100px] border-none">Restablecer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="flex-box">
+            <div>
+            <h2 class="text-[30px]">Información de contacto</h2>
+            <p><strong>Para cualquier consulta, no dudes en ponerte en contacto con nosotros:</strong></p>
+                <div class="block-center">
+                    <ul class="sin-viñetas">
+                        <li class="align-contact">Teléfono: <a class="a-footer" href="tel:+123 456 7890">+123 456 7890</a></li>
+                        <li class="align-contact">Email: <a class="a-footer" href="mailto:contacto@viajarte.com">contacto@viajarte.com</a></li>
+                            <br>
+                            <a  href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../img/Redes-Sociales/logo-facebook.png" alt="Facebook" width="40"></a>
+                            <a  href="https://www.x.com/" target="_blank" rel="noopener noreferrer"><img src="../img/Redes-Sociales/logo-x.png" alt="Twitter/X" width="40"></a>
+                            <a  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="../img/Redes-Sociales/logo-instagram.png" alt="Instagram" width="40"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-[25px]">Horarios de atención</h3>
+                <div>
+                    <table class="tabla-horarios">
+                        <thead>
+                            <tr>
+                                <th class="th-horarios">Día</th>
+                                <th colspan="2">Horarios</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Lunes</td><td rowspan="5">9:00am a 13:00pm</td><td rowspan="5">17:00pm a 21:00pm</td></tr>
+                            <tr><td>Martes</td></tr>
+                            <tr><td>Miércoles</td></tr>
+                            <tr><td>Jueves</td></tr>
+                            <tr><td>Viernes</td></tr>
+                            <tr><td>Sábado</td><td>8:15am a 12:00pm</td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div>
+            <p class="text-cent">© 2025 ViajArte. Todos los derechos reservados.</p>
+            <p class="text-cent">Última actualización: Marzo 2025.</p>
+        </div>
+    </footer>
+</body>
+</html>

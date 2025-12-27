@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="tit-barra">
+            <h1 class="text-[40px]">Viaj<span>Arte</span></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
+                    <li><a href="../destinos/destinos.html">Destinos</a></li>
+                    <li><a href="contactos.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="con-destinos">
+            <h2 class="text-[30px]">Descubre Argentina</h2>
+            <p>De las montañas a la selva, paisajes que te dejarán sin aliento.</p>
+            <h3 class="text-[25px]">¡Tu aventura argentina comienza aquí!</h3>
+            <a href="../destinos/destinos.html">¡Explorar ahora!</a>
+        </div>
+        </section>
+    </header>
+    <main>
+        <section id="contacto" class="bg-[rgb(36,36,36)] p-5 rounded-[20px] max-w-[500px] mx-auto">
+            <h2 class="text-[rgb(0,132,255)] text-[30px]">Formulario de contacto</h2>
+            <p class="text-white mb-4">¡Nos encantaría saber de ti! Completa este formulario y te responderemos en menos de 24 horas para ayudarte a planificar tu próxima aventura con el toque artístico que nos caracteriza.</p>
+            <form class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-white mb-1">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3" class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                </div>
+                    
+                <div>
+                    <label for="apellido" class="block text-white mb-1">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required minlength="3" class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                </div>
+                    
+                <div>
+                    <p class="text-white mb-1">Sexo:</p>
+                    <div class="flex gap-4">
+                        <div class="flex items-center">
+                            <input type="radio" name="sexo" id="femenino" value="femenino" class="mr-1">
+                            <label for="femenino" class="text-white">Femenino</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="sexo" id="maculino" value="masculino" class="mr-1">
+                            <label for="masculino" class="text-white">Masculino</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-white mb-1">Correo electronico:</label>
+                    <input type="email" id="email" name="email" required class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                </div>
+                    
+                <div>
+                    <label for="telefono" class="block text-white mb-1">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                </div>
+                
+                <div>
+                    <p class="text-white mb-1">Preferencia de contacto:</p>
+                    <div class="flex gap-4">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="pref-email" name="preferencia" value="email" class="mr-1">
+                            <label for="pref-email" class="text-white">Email</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="pref-telefono" name="preferencia" value="telefono" class="mr-1">
+                            <label for="pref-telefono" class="text-white">Teléfono</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="asuntos" class="block text-white mb-1">Asunto</label>
+                    <select name="asunto" id="asuntos" required class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="consulta_general">Consulta general</option>
+                        <option value="cotizacion_viaje">Cotización de viaje</option>
+                        <option value="reserva_hotel">Reserva de hotel</option>
+                        <option value="reserva_vuelo">Reserva de vuelo</option>
+                        <option value="paquetes_turisticos">Paquetes turísticos</option>
+                        <option value="info_destinos">Información sobre destinos</option>
+                        <option value="cambios_cancelaciones">Cambios o cancelaciones</option>
+                        <option value="asistencia_viaje">Asistencia en viaje</option>
+                        <option value="reclamos_sugerencias">Reclamos o sugerencias</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje" class="block text-white mb-1">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required rows="5" class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none"></textarea>
+                </div>
+                
+                <div class="flex gap-4">
+                    <button type="submit" class="bg-[rgb(25,150,0)] text-white px-4 py-2 rounded-[10px] border-none">Enviar</button>
+                    <button type="reset" class="bg-[rgb(255,33,33)] text-white px-4 py-2 rounded-[10px] border-none">Borrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="flex-box">
+            <div>
+            <h2 class="text-[30px]">Información de contacto</h2>
+            <p><strong>Para cualquier consulta, no dudes en ponerte en contacto con nosotros:</strong></p>
+                <div class="block-center">
+                    <ul class="sin-viñetas">
+                        <li class="align-contact">Teléfono: <a class="a-footer" href="tel:+123 456 7890">+123 456 7890</a></li>
+                        <li class="align-contact">Email: <a class="a-footer" href="mailto:contacto@viajarte.com">contacto@viajarte.com</a></li>
+                            <br>
+                            <a  href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../img/Redes-Sociales/logo-facebook.png" alt="Facebook" width="40"></a>
+                            <a  href="https://www.x.com/" target="_blank" rel="noopener noreferrer"><img src="../img/Redes-Sociales/logo-x.png" alt="Twitter/X" width="40"></a>
+                            <a  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="../img/Redes-Sociales/logo-instagram.png" alt="Instagram" width="40"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-[25px]">Horarios de atención</h3>
+                <div>
+                    <table class="tabla-horarios">
+                        <thead>
+                            <tr>
+                                <th class="th-horarios">Día</th>
+                                <th colspan="2">Horarios</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Lunes</td><td rowspan="5">9:00am a 13:00pm</td><td rowspan="5">17:00pm a 21:00pm</td></tr>
+                            <tr><td>Martes</td></tr>
+                            <tr><td>Miércoles</td></tr>
+                            <tr><td>Jueves</td></tr>
+                            <tr><td>Viernes</td></tr>
+                            <tr><td>Sábado</td><td>8:15am a 12:00pm</td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <div>
+            <p class="text-cent">© 2025 ViajArte. Todos los derechos reservados.</p>
+            <p class="text-cent">Última actualización: Marzo 2025.</p>
+        </div>
+
+    </footer>
+</body>
+</html>
