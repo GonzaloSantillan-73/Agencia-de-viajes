@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos</title>
-    <link rel="stylesheet" href="style-destinos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -26,62 +28,61 @@
             <h3 class="text-[25px]">¡Tu viaje inolvidable está a un clic de distancia!</h3>
             <p>¡Empieza a planearlo!</p>
         </div>
-        </section>
     </header>
     <main>
-        <section class="bg-[#cfcfcf] m-0 p-5 font-['Franklin_Gothic_Medium'] font-semibold">
-            <h2 class="text-[30px] text-[rgb(0,140,255)]">Descubre nuestros destinos</h2>
-            <p class="mb-6">Descubre la esencia de Argentina a través de sus paisajes más fascinantes. Desde la vibrante energía de Buenos Aires hasta los imponentes glaciares de Santa Cruz, cada provincia te espera con experiencias únicas que combinan naturaleza, cultura y aventura. Explora nuestra selección de destinos y déjate inspirar para tu próximo viaje.</p>
-            <div class="flex gap-[10px] flex-wrap justify-around items-center">
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/buenos-aires.jpeg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Buenos Aires</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="buenos-aires/buenos-aires.html">Ver mas...</a>
+        <section class="bg-[#f7f3ec] m-0 px-5 py-12">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Descubre nuestros destinos</h2>
+            <p class="mb-10 max-w-[900px] text-[17px]">Descubre la esencia de Argentina a través de sus paisajes más fascinantes. Desde la vibrante energía de Buenos Aires hasta los imponentes glaciares de Santa Cruz, cada provincia te espera con experiencias únicas que combinan naturaleza, cultura y aventura. Explora nuestra selección de destinos y déjate inspirar para tu próximo viaje.</p>
+            <div class="flex gap-8 flex-wrap justify-center items-center">
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/buenos-aires.jpeg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Buenos Aires</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="buenos-aires/buenos-aires.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/cordoba.jpg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Córdoba</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="cordoba/cordoba.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/cordoba.jpg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Córdoba</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="cordoba/cordoba.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/salta.jpg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Salta</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="salta/salta.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/salta.jpg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Salta</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="salta/salta.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/jujuy.jpg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Jujuy</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="jujuy/jujuy.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/jujuy.jpg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Jujuy</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="jujuy/jujuy.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/santa-cruz.jpg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Santa Cruz</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="santa-cruz/santa-cruz.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/santa-cruz.jpg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Santa Cruz</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="santa-cruz/santa-cruz.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/tierra-del-fuego.png" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Tierra del Fuego</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="tierra-del-fuego/tierra-del-fuego.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/tierra-del-fuego.png" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Tierra del Fuego</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="tierra-del-fuego/tierra-del-fuego.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/mendoza.webp" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Mendoza</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="mendoza/mendoza.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/mendoza.webp" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Mendoza</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="mendoza/mendoza.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/san-juan.jpg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">San Juan</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="san-juan/san-juan.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/san-juan.jpg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">San Juan</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="san-juan/san-juan.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/misiones.jpg" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Misiones</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="misiones/misiones.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/misiones.jpg" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Misiones</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="misiones/misiones.html">Ver más &rarr;</a>
                 </div>
-                <div class="w-[300px] h-[350px] bg-white rounded-[30px] shadow-[5px_5px_30px_black] mb-[30px] overflow-hidden text-center">
-                    <img src="img/entre-rios.png" alt="" class="w-full h-[200px] object-cover">
-                    <p class="text-[25px] font-black mt-0 text-[rgb(0,153,255)]">Entre Ríos</p>
-                    <a class="inline-block text-white bg-[rgb(14,160,14)] rounded-[10px] px-[15px] py-[10px] text-[20px]" href="entre-rios/entre-rios.html">Ver mas...</a>
+                <div class="tarjeta w-[300px] bg-white rounded-[18px] shadow-md overflow-hidden text-center pb-5">
+                    <img src="img/entre-rios.png" alt="" class="w-full h-[200px] object-cover border-b-4 border-[#ffc107]">
+                    <p class="text-[24px] font-bold my-3 text-[#1565c0] font-['Poppins']">Entre Ríos</p>
+                    <a class="boton inline-block text-white bg-[#ef6c00] rounded-[25px] px-[22px] py-[8px]" href="entre-rios/entre-rios.html">Ver más &rarr;</a>
                 </div>
             </div>
         </section>

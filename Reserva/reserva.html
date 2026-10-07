@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Viaje</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <header class="header-chico">
         <div class="tit-barra">
             <h1 class="text-[40px]">Viaj<span>Arte</span></h1>
             <nav>
@@ -20,34 +22,33 @@
                 </ul>
             </nav>
         </div>
-        </section>
     </header>
-    <main class="bg-white p-[10px]">
-        <section class="bg-[#dddddd] p-[10px] rounded-[20px]">
-            <h2 class="text-[30px] text-[rgb(0,132,255)]">Planificá tu aventura en Argentina</h2>
+    <main class="px-4 py-10">
+        <section class="max-w-[750px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Planificá tu aventura en Argentina</h2>
             <p class="mb-4">Completá el formulario y nuestro equipo te ayudará a organizar el viaje perfecto. Responderemos dentro de las 24 horas.</p>
             
-            <form id="form-viaje" class="bg-[#0663A8] text-white p-5 max-w-[600px] mx-auto rounded-[10px] font-['Segoe_UI']">
-                <h2 class="text-[30px] text-white mb-4">Formulario de Solicitud de Viaje</h2>
+            <form id="form-viaje" class="bg-white p-6 md:p-8 rounded-[20px] shadow-xl border-t-8 border-[#ffc107] mt-6">
+                <h2 class="text-[26px] text-[#ef6c00] mb-4">Formulario de Solicitud de Viaje</h2>
             
-                <fieldset class="mb-6">
-                    <legend class="font-bold text-lg">Información Personal</legend>
+                <fieldset class="mb-6 border border-gray-200 rounded-[12px] p-4">
+                    <legend class="font-bold text-lg text-[#1565c0] px-2">Información Personal</legend>
             
-                    <label for="nombre" class="block mb-1">Nombre y apellido:</label>
-                    <input type="text" id="nombre" name="nombre" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="nombre" class="block font-semibold mb-1">Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
             
-                    <label for="email" class="block mb-1 mt-3">Email:</label>
-                    <input type="email" id="email" name="email" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="email" class="block font-semibold mb-1 mt-3">Email:</label>
+                    <input type="email" id="email" name="email" required class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
             
-                    <label for="telefono" class="block mb-1 mt-3">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Opcional" class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="telefono" class="block font-semibold mb-1 mt-3">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Opcional" class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
                 </fieldset>
                 
-                <fieldset class="mb-6">
-                    <legend class="font-bold text-lg">Información del Viaje</legend>
+                <fieldset class="mb-6 border border-gray-200 rounded-[12px] p-4">
+                    <legend class="font-bold text-lg text-[#1565c0] px-2">Información del Viaje</legend>
             
-                    <label for="destino" class="block mb-1">Destino:</label>
-                    <select id="destino" name="destino" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="destino" class="block font-semibold mb-1">Destino:</label>
+                    <select id="destino" name="destino" required class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
                         <option value="buenos_aires">Buenos Aires</option>
                         <option value="cordoba">Cordoba</option>
                         <option value="entre_rios">Entre Rios</option>
@@ -60,66 +61,66 @@
                         <option value="tierra_del_fuego">Tierra del Fuego</option>
                     </select>
                     
-                    <label for="fecha" class="block mb-1 mt-3">Fecha de salida:</label>
-                    <input type="date" id="fecha" name="fecha" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="fecha" class="block font-semibold mb-1 mt-3">Fecha de salida:</label>
+                    <input type="date" id="fecha" name="fecha" required class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
                     
-                    <label for="duracion" class="block mb-1 mt-3">Duración del viaje (días) *</label>
-                    <input type="number" id="duracion" name="duracion" min="1" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="duracion" class="block font-semibold mb-1 mt-3">Duración del viaje (días) *</label>
+                    <input type="number" id="duracion" name="duracion" min="1" required class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
             
-                    <label for="viajeros" class="block mb-1 mt-3">Número de viajeros *</label>
-                    <input type="number" id="viajeros" name="viajeros" min="1" required class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
+                    <label for="viajeros" class="block font-semibold mb-1 mt-3">Número de viajeros *</label>
+                    <input type="number" id="viajeros" name="viajeros" min="1" required class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
                 </fieldset>
                 
-                <fieldset class="mb-6">
-                    <legend class="font-bold text-lg">Preferencias</legend>
+                <fieldset class="mb-6 border border-gray-200 rounded-[12px] p-4">
+                    <legend class="font-bold text-lg text-[#1565c0] px-2">Preferencias</legend>
 
-                    <label class="block mb-1 mt-3">Tipo de alojamiento:</label>
+                    <label class="block font-semibold mb-1 mt-3">Tipo de alojamiento:</label>
                     <div class="space-y-2 mt-2">
                         <div class="flex items-center">
-                            <input type="radio" id="hotel" name="alojamiento" value="hotel" required class="mr-2">
+                            <input type="radio" id="hotel" name="alojamiento" value="hotel" required class="mr-2 accent-[#ef6c00]">
                             <label for="hotel">Hotel</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="radio" id="hostel" name="alojamiento" value="hostel" class="mr-2">
+                            <input type="radio" id="hostel" name="alojamiento" value="hostel" class="mr-2 accent-[#ef6c00]">
                             <label for="hostel">Hostel</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="radio" id="apartamento" name="alojamiento" value="apartamento" class="mr-2">
+                            <input type="radio" id="apartamento" name="alojamiento" value="apartamento" class="mr-2 accent-[#ef6c00]">
                             <label for="apartamento">Apartamento</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="radio" id="cabaña" name="alojamiento" value="cabaña" class="mr-2">
+                            <input type="radio" id="cabaña" name="alojamiento" value="cabaña" class="mr-2 accent-[#ef6c00]">
                             <label for="cabaña">Cabaña</label>
                         </div>
                     </div>
 
-                    <label class="block mb-1 mt-4">Servicios adicionales:</label>
+                    <label class="block font-semibold mb-1 mt-4">Servicios adicionales:</label>
                     <div class="space-y-2 mt-2">
                         <div class="flex items-center">
-                            <input type="checkbox" id="traslados" name="servicios" value="traslados" class="mr-2">
+                            <input type="checkbox" id="traslados" name="servicios" value="traslados" class="mr-2 accent-[#ef6c00]">
                             <label for="traslados">Traslados</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="checkbox" id="excursiones" name="servicios" value="excursiones" class="mr-2">
+                            <input type="checkbox" id="excursiones" name="servicios" value="excursiones" class="mr-2 accent-[#ef6c00]">
                             <label for="excursiones">Excursiones</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="checkbox" id="seguro" name="servicios" value="seguro" class="mr-2">
+                            <input type="checkbox" id="seguro" name="servicios" value="seguro" class="mr-2 accent-[#ef6c00]">
                             <label for="seguro">Seguro de viaje</label>
                         </div>
                     </div>
 
-                    <label for="presupuesto" class="block mb-1 mt-3">Presupuesto aproximado (ARS)</label>
-                    <input type="number" id="presupuesto" name="presupuesto" min="0" step="500" class="bg-[#052C3D] text-[cadetblue] w-full p-1.5 border-none">
-                    <p class="text-sm mt-1"><small>Podés indicar un número estimado o dejarlo en blanco si no estás seguro.</small></p>
+                    <label for="presupuesto" class="block font-semibold mb-1 mt-3">Presupuesto aproximado (ARS)</label>
+                    <input type="number" id="presupuesto" name="presupuesto" min="0" step="500" class="campo bg-[#f4f6f9] w-full p-2 rounded-[8px] border border-gray-300">
+                    <p class="text-sm mt-1 text-gray-500"><small>Podés indicar un número estimado o dejarlo en blanco si no estás seguro.</small></p>
                     
-                    <label for="notas" class="block mb-1 mt-3">Notas adicionales</label>
-                    <textarea id="notas" name="notas" rows="4" placeholder="Contanos cualquier detalle especial que desees agregar..." class="bg-[#052C3D] text-[cadetblue] w-full p-2.5 border-none font-sans"></textarea>
+                    <label for="notas" class="block font-semibold mb-1 mt-3">Notas adicionales</label>
+                    <textarea id="notas" name="notas" rows="4" placeholder="Contanos cualquier detalle especial que desees agregar..." class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300"></textarea>
                 </fieldset>
                 
                 <div class="flex gap-4">
-                    <button type="submit" class="bg-[#4CB050] text-white px-4 py-3.5 rounded-[5px] w-[100px] border-none">Enviar</button>
-                    <button type="reset" class="bg-[#D82C28] text-white px-4 py-3.5 rounded-[5px] w-[100px] border-none">Restablecer</button>
+                    <button type="submit" class="boton bg-[#1565c0] text-white px-6 py-2.5 rounded-[25px] border-none">Enviar</button>
+                    <button type="reset" class="boton bg-gray-300 text-[#2d2d2d] px-6 py-2.5 rounded-[25px] border-none">Restablecer</button>
                 </div>
             </form>
         </section>

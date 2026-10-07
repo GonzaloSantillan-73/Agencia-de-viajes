@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -24,61 +26,60 @@
             <h2 class="text-[30px]">Descubre Argentina</h2>
             <p>De las montañas a la selva, paisajes que te dejarán sin aliento.</p>
             <h3 class="text-[25px]">¡Tu aventura argentina comienza aquí!</h3>
-            <a href="destinos/destinos.html">¡Explorar ahora!</a>
+            <a href="../destinos/destinos.html">¡Explorar ahora!</a>
         </div>
-        </section>
     </header>
-    <main class="p-5">
+    <main class="px-5 py-6 max-w-[1100px] mx-auto">
         <section>
-            <h2 class="text-[30px] text-[#3498db] border-b-2 border-[#3498db] p-[10px] mt-10">Nuestra Historia</h2>
+            <h2 class="text-[30px] titulo-seccion text-[#1565c0] mt-12">Nuestra Historia</h2>
             <p class="my-4">Fundada en 2010 en Buenos Aires, ViajArte nació de la pasión por mostrar la Argentina más auténtica. Lo que comenzó como un pequeño grupo de guías locales hoy es una red de expertos en turismo comprometidos con crear experiencias memorables.</p>
             
-            <blockquote class="italic p-5 bg-[#f8f9fa] border-l-4 border-[#3498db] my-10">
+            <blockquote class="italic text-[18px] p-6 bg-[#fff3e0] border-l-4 border-[#ef6c00] rounded-r-[12px] my-10">
                 "No solo mostramos lugares, creamos conexiones entre viajeros y las historias que hacen único a cada rincón de nuestro país."
-                <cite class="block mt-2">- Martín Gómez, Fundador</cite>
+                <cite class="block mt-3 not-italic font-bold text-[#ef6c00]">- Martín Gómez, Fundador</cite>
             </blockquote>
         </section>
 
         <section>
-            <h2 class="text-[30px] text-[#3498db] border-b-2 border-[#3498db] p-[10px] mt-10">Nuestro Equipo</h2>
+            <h2 class="text-[30px] titulo-seccion text-[#1565c0] mt-12">Nuestro Equipo</h2>
             <div class="flex flex-wrap justify-around gap-8 my-10">
-                <div class="flex-1 min-w-[300px] text-center p-5 rounded-lg shadow-md">
-                    <img src="img/martin.png" alt="Martín Gómez" class="w-[150px] h-[150px] rounded-full object-cover mb-4 border-4 border-[#3498db] mx-auto">
+                <div class="tarjeta flex-1 min-w-[260px] text-center p-6 bg-white rounded-[16px] shadow-md">
+                    <img src="img/martin.png" alt="Martín Gómez" class="w-[150px] h-[150px] rounded-full object-cover mb-4 border-4 border-[#ffc107] mx-auto">
                     <h3 class="text-[25px]">Martín Gómez</h3>
-                    <p class="font-semibold">Fundador & Guía Patagónico</p>
+                    <p class="font-semibold text-[#ef6c00]">Fundador & Guía Patagónico</p>
                     <p>15 años mostrando los secretos del sur argentino</p>
                 </div>
                 
-                <div class="flex-1 min-w-[300px] text-center p-5 rounded-lg shadow-md">
-                    <img src="img/lucia.png" alt="Lucía Fernández" class="w-[150px] h-[150px] rounded-full object-cover mb-4 border-4 border-[#3498db] mx-auto">
+                <div class="tarjeta flex-1 min-w-[260px] text-center p-6 bg-white rounded-[16px] shadow-md">
+                    <img src="img/lucia.png" alt="Lucía Fernández" class="w-[150px] h-[150px] rounded-full object-cover mb-4 border-4 border-[#ffc107] mx-auto">
                     <h3 class="text-[25px]">Lucía Fernández</h3>
-                    <p class="font-semibold">Directora de Experiencias</p>
+                    <p class="font-semibold text-[#ef6c00]">Directora de Experiencias</p>
                     <p>Especialista en cultura del Noroeste</p>
                 </div>
                 
-                <div class="flex-1 min-w-[300px] text-center p-5 rounded-lg shadow-md">
-                    <img src="img/carlos.png" alt="Carlos Ríos" class="w-[150px] h-[150px] rounded-full object-cover mb-4 border-4 border-[#3498db] mx-auto">
+                <div class="tarjeta flex-1 min-w-[260px] text-center p-6 bg-white rounded-[16px] shadow-md">
+                    <img src="img/carlos.png" alt="Carlos Ríos" class="w-[150px] h-[150px] rounded-full object-cover mb-4 border-4 border-[#ffc107] mx-auto">
                     <h3 class="text-[25px]">Carlos Ríos</h3>
-                    <p class="font-semibold">Coordinador de Aventuras</p>
+                    <p class="font-semibold text-[#ef6c00]">Coordinador de Aventuras</p>
                     <p>Guía certificado de trekking y montaña</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2 class="text-[30px] text-[#3498db] border-b-2 border-[#3498db] p-[10px] mt-10">Nuestros Valores</h2>
+            <h2 class="text-[30px] titulo-seccion text-[#1565c0] mt-12">Nuestros Valores</h2>
             <div class="flex flex-wrap justify-between gap-5 my-10">
-                <div class="flex-1 min-w-[250px] p-5 bg-[#f8f9fa] rounded-lg border-l-4 border-[#3498db]">
+                <div class="tarjeta flex-1 min-w-[250px] p-5 bg-white rounded-[12px] border-t-4 border-[#1565c0] shadow-sm">
                     <h3 class="text-[25px]">Autenticidad</h3>
                     <p>Buscamos mostrar la esencia real de cada destino, más allá de los circuitos turísticos convencionales.</p>
                 </div>
                 
-                <div class="flex-1 min-w-[250px] p-5 bg-[#f8f9fa] rounded-lg border-l-4 border-[#3498db]">
+                <div class="tarjeta flex-1 min-w-[250px] p-5 bg-white rounded-[12px] border-t-4 border-[#1565c0] shadow-sm">
                     <h3 class="text-[25px]">Sostenibilidad</h3>
                     <p>Promovemos un turismo responsable que beneficie a las comunidades locales y preserve el medio ambiente.</p>
                 </div>
                 
-                <div class="flex-1 min-w-[250px] p-5 bg-[#f8f9fa] rounded-lg border-l-4 border-[#3498db]">
+                <div class="tarjeta flex-1 min-w-[250px] p-5 bg-white rounded-[12px] border-t-4 border-[#1565c0] shadow-sm">
                     <h3 class="text-[25px]">Pasión</h3>
                     <p>Amamos lo que hacemos y eso se refleja en cada experiencia que diseñamos para nuestros viajeros.</p>
                 </div>
@@ -86,12 +87,12 @@
         </section>
 
         <section>
-            <h2 class="text-[30px] text-[#3498db] border-b-2 border-[#3498db] p-[10px] mt-10">¿Por qué elegirnos?</h2>
-            <ul class="list-disc pl-5 space-y-2 my-4">
-                <li><strong class="text-[#0051ff]">Expertos locales:</strong> Nuestros guías nacieron y crecieron en las regiones que mostramos.</li>
-                <li><strong class="text-[#0051ff]">Experiencias únicas:</strong> Acceso a lugares y actividades que no encontrarás por tu cuenta.</li>
-                <li><strong class="text-[#0051ff]">Flexibilidad:</strong> Diseñamos itinerarios personalizados según tus intereses.</li>
-                <li><strong class="text-[#0051ff]">Compromiso social:</strong> El 10% de nuestras ganancias se destinan a proyectos comunitarios.</li>
+            <h2 class="text-[30px] titulo-seccion text-[#1565c0] mt-12">¿Por qué elegirnos?</h2>
+            <ul class="list-disc pl-5 space-y-2 my-4 mb-10 marker:text-[#ef6c00]">
+                <li><strong class="text-[#1565c0]">Expertos locales:</strong> Nuestros guías nacieron y crecieron en las regiones que mostramos.</li>
+                <li><strong class="text-[#1565c0]">Experiencias únicas:</strong> Acceso a lugares y actividades que no encontrarás por tu cuenta.</li>
+                <li><strong class="text-[#1565c0]">Flexibilidad:</strong> Diseñamos itinerarios personalizados según tus intereses.</li>
+                <li><strong class="text-[#1565c0]">Compromiso social:</strong> El 10% de nuestras ganancias se destinan a proyectos comunitarios.</li>
             </ul>
         </section>
     </main>

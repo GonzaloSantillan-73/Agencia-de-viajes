@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre Ríos - Tierra de Agua y Carnaval</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -21,104 +23,104 @@
             </nav>
         </div>
         <div class="con-destinos">
-            <h3 class="text-[40px] text-[rgb(0,110,255)]">Entre Ríos - Tierra de Agua y Carnaval</h3>
+            <h3 class="text-[34px] md:text-[40px]">Entre Ríos - Tierra de Agua y Carnaval</h3>
             <p>Disfrutá de la naturaleza y relax entrerriano con un paquete especial de 4 días y 3 noches.</p>
             <p>Desde $650 USD por persona.</p>
-            <a id="a-buenos-aires" href="../../Reserva/reserva.html" class="inline-block px-[10px] py-[5px] bg-[rgb(0,140,255)] rounded-[10px] text-white hover:bg-[rgb(78,175,255)] hover:border hover:border-[rgb(0,140,255)]">¡Reservar ahora!</a>
+            <a id="a-buenos-aires" href="../../Reserva/reserva.html">¡Reservar ahora!</a>
         </div>
     </header>
-    <main class="bg-[#cccccc] p-[10px]">
+    <main class="bg-[#f7f3ec] p-[10px] md:p-6">
         <!-- SECCIÓN: Lugares turísticos (2) -->
-        <section class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Lugares de turismo</h2>
+        <section class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Lugares de turismo</h2>
             
             <!-- ARTÍCULO: Termas -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/termas.jpeg" alt="Termas de Entre Ríos" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/termas.jpeg" alt="Termas de Entre Ríos" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Complejos Termales</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Complejos Termales</h3>
                     <p>Entre Ríos es famoso por sus aguas termales con propiedades terapéuticas. Los complejos de Federación, Colón y Concordia ofrecen piscinas termales a diferentes temperaturas, spa y tratamientos de relax en entornos naturales.</p>
                 </div>
             </article>
             
             <!-- ARTÍCULO: Palacio San José -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/palacio.jpg" alt="Palacio San José" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/palacio.jpg" alt="Palacio San José" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Palacio San José</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Palacio San José</h3>
                     <p>Residencia del General Justo José de Urquiza, primer presidente constitucional argentino. Este imponente palacio-museo de estilo italianizante conserva muebles originales, frescos históricos y hermosos jardines.</p>
                 </div>
             </article>
         </section>
 
         <!-- SECCIÓN: Historia de Entre Ríos -->
-        <section id="historia" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Historia de Entre Ríos</h2>
+        <section id="historia" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Historia de Entre Ríos</h2>
             <p>Originalmente habitada por los pueblos charrúas y guaraníes, la provincia tuvo un rol protagónico en la organización nacional. Fue escenario de batallas decisivas y cuna de la Constitución Argentina de 1853. Su desarrollo estuvo marcado por la agricultura, la ganadería y su posición estratégica entre los ríos Paraná y Uruguay. Hoy es conocida por sus paisajes fluviales, termas, carnavales y como importante productora de cítricos y arroz.</p>
         </section>
 
         <!-- SECCIÓN: Evento destacado (1) -->
-        <section id="eventos" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Evento destacado</h2>
+        <section id="eventos" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Evento destacado</h2>
             
             <!-- ARTÍCULO: Carnaval del País -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/carnaval.jpg" alt="Carnaval de Gualeguaychú" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/carnaval.jpg" alt="Carnaval de Gualeguaychú" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Carnaval del País (enero-marzo)</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Carnaval del País (enero-marzo)</h3>
                     <p>El espectáculo a cielo abierto más grande de Argentina, con más de 40,000 espectadores por noche. Las comparsas de Gualeguaychú presentan carrozas monumentales, trajes espectaculares y coreografías con más de 250 bailarines por agrupación.</p>
                 </div>
             </article>
         </section>
 
         <!-- SECCIÓN: Clima -->
-        <section id="clima" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Clima en Entre Ríos</h2>
+        <section id="clima" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Clima en Entre Ríos</h2>
             <p>Clima templado húmedo con influencia de los ríos que la rodean.</p>
-            <table class="border border-gray-400 w-[90%] mx-auto my-4">
+            <table class="tabla-clima w-[95%] max-w-[800px] mx-auto my-5 shadow-md">
                 <thead>
                     <tr>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Estación</th>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Temperatura promedio</th>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Clima</th>
+                        <th class="bg-[#1565c0] text-white p-3">Estación</th>
+                        <th class="bg-[#1565c0] text-white p-3">Temperatura promedio</th>
+                        <th class="bg-[#1565c0] text-white p-3">Clima</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Verano</td>
-                        <td class="border border-gray-400 p-2 text-center">22-33°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Caluroso y húmedo</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Verano</td>
+                        <td class="border-b border-gray-200 p-3 text-center">22-33°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Caluroso y húmedo</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Otoño</td>
-                        <td class="border border-gray-400 p-2 text-center">15-25°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Templado, ideal para visitar</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Otoño</td>
+                        <td class="border-b border-gray-200 p-3 text-center">15-25°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Templado, ideal para visitar</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Invierno</td>
-                        <td class="border border-gray-400 p-2 text-center">7-18°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Fresco con nieblas matinales</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Invierno</td>
+                        <td class="border-b border-gray-200 p-3 text-center">7-18°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Fresco con nieblas matinales</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Primavera</td>
-                        <td class="border border-gray-400 p-2 text-center">18-28°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Agradable con floración</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Primavera</td>
+                        <td class="border-b border-gray-200 p-3 text-center">18-28°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Agradable con floración</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- SECCIÓN: Mapa de ubicación -->
-        <section class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Ver en el mapa</h2>
+        <section class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Ver en el mapa</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110927.603551339!2d-60.55180895!3d-32.03510785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b425d0a8acb0a1%3A0x3f9a1f46d9b5e5d5!2sEntre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar" 
-                    class="w-[80%] h-[300px] block mx-auto pb-[30px] border-0" 
+                    class="w-full md:w-[90%] h-[350px] block mx-auto my-4 border-0 rounded-[14px] shadow-md" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
@@ -127,7 +129,7 @@
         </section>
         
         <!-- Enlace para volver al inicio -->
-        <a class="a-volver block mx-auto w-[105px] text-center mt-0 p-[10px] rounded-[10px] bg-[rgb(42,165,52)] text-white" href="#volver-inicio">Volver al inicio</a>
+        <a class="a-volver" href="#volver-inicio">Volver al inicio</a>
     </main>
 
     <footer>

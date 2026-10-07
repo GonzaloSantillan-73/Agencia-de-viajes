@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salta - La Linda</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -21,104 +23,104 @@
             </nav>
         </div>
         <div class="con-destinos">
-            <h3 class="text-[40px] text-[rgb(0,110,255)]">Salta - La Linda</h3>
+            <h3 class="text-[34px] md:text-[40px]">Salta - La Linda</h3>
             <p>Descubrí la magia del noroeste argentino con un paquete especial de 7 días y 6 noches.</p>
             <p>Desde $800 USD por persona.</p>
-            <a id="a-buenos-aires" href="../../Reserva/reserva.html" class="inline-block px-[10px] py-[5px] bg-[rgb(0,140,255)] rounded-[10px] text-white hover:bg-[rgb(78,175,255)] hover:border hover:border-[rgb(0,140,255)]">¡Reservar ahora!</a>
+            <a id="a-buenos-aires" href="../../Reserva/reserva.html">¡Reservar ahora!</a>
         </div>
     </header>
-    <main class="bg-[#cccccc] p-[10px]">
+    <main class="bg-[#f7f3ec] p-[10px] md:p-6">
         <!-- SECCIÓN: Lugares turísticos -->
-        <section class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Lugares de turismo</h2>
+        <section class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Lugares de turismo</h2>
             
             <!-- ARTÍCULO: Cerro de los Siete Colores -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/cerro.webp" alt="Cerro de los Siete Colores en Purmamarca" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/cerro.webp" alt="Cerro de los Siete Colores en Purmamarca" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Cerro de los Siete Colores</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Cerro de los Siete Colores</h3>
                     <p>Ubicado en Purmamarca, este cerro es famoso por sus increíbles vetas de colores formadas por sedimentos de diferentes eras geológicas. Un espectáculo natural único en el mundo.</p>
                 </div>
             </article>
             
             <!-- ARTÍCULO: Tren a las Nubes -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/tren.jpg" alt="Tren a las Nubes" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/tren.jpg" alt="Tren a las Nubes" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Tren a las Nubes</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Tren a las Nubes</h3>
                     <p>Una de las obras de ingeniería más impresionantes de Argentina, este tren recorre montañas a más de 4,200 metros de altura, ofreciendo vistas espectaculares de la Puna.</p>
                 </div>
             </article>
         </section>
 
         <!-- SECCIÓN: Historia de Salta -->
-        <section id="historia" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Historia de Salta</h2>
+        <section id="historia" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Historia de Salta</h2>
             <p>Fundada en 1582 por Hernando de Lerma, Salta fue un importante punto estratégico durante la colonia por su ubicación en el Camino Real al Alto Perú. Conocida como "Salta la Linda", conserva un rico patrimonio cultural que mezcla tradiciones indígenas con influencia española. Fue escenario clave durante las guerras de independencia y conserva importantes testimonios de ese período histórico. Hoy es uno de los destinos turísticos más importantes del norte argentino.</p>
         </section>
 
         <!-- SECCIÓN: Eventos destacados -->
-        <section id="eventos" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Eventos destacados</h2>
+        <section id="eventos" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Eventos destacados</h2>
             
             <!-- ARTÍCULO: Fiesta del Milagro -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/milagro.jpg" alt="Fiesta del Milagro" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/milagro.jpg" alt="Fiesta del Milagro" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Fiesta del Milagro (septiembre)</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Fiesta del Milagro (septiembre)</h3>
                     <p>La celebración religiosa más importante del norte argentino conmemora el "Milagro" que salvó a Salta de terremotos en 1692. Durante dos semanas hay procesiones, misas y eventos culturales que atraen a miles de fieles.</p>
                 </div>
             </article>
         </section>
 
         <!-- SECCIÓN: Clima -->
-        <section id="clima" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Clima en Salta</h2>
+        <section id="clima" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Clima en Salta</h2>
             <p>Salta tiene un clima variado según la región, desde templado en los valles hasta árido en la Puna.</p>
-            <table class="border border-gray-400 w-[90%] mx-auto my-4">
+            <table class="tabla-clima w-[95%] max-w-[800px] mx-auto my-5 shadow-md">
                 <thead>
                     <tr>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Estación</th>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Temperatura promedio</th>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Clima</th>
+                        <th class="bg-[#1565c0] text-white p-3">Estación</th>
+                        <th class="bg-[#1565c0] text-white p-3">Temperatura promedio</th>
+                        <th class="bg-[#1565c0] text-white p-3">Clima</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Verano</td>
-                        <td class="border border-gray-400 p-2 text-center">20-30°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Cálido y lluvioso (en los valles)</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Verano</td>
+                        <td class="border-b border-gray-200 p-3 text-center">20-30°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Cálido y lluvioso (en los valles)</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Otoño</td>
-                        <td class="border border-gray-400 p-2 text-center">15-25°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Templado y seco</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Otoño</td>
+                        <td class="border-b border-gray-200 p-3 text-center">15-25°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Templado y seco</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Invierno</td>
-                        <td class="border border-gray-400 p-2 text-center">5-20°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Fresco durante el día, frío en la noche</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Invierno</td>
+                        <td class="border-b border-gray-200 p-3 text-center">5-20°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Fresco durante el día, frío en la noche</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Primavera</td>
-                        <td class="border border-gray-400 p-2 text-center">18-28°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Agradable con noches frescas</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Primavera</td>
+                        <td class="border-b border-gray-200 p-3 text-center">18-28°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Agradable con noches frescas</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- SECCIÓN: Mapa de ubicación -->
-        <section class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Ver en el mapa</h2>
+        <section class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Ver en el mapa</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926066.0082434537!2d-66.04189295!3d-24.79619445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f0e8b9e6c9d%3A0x65a7a5ef0a98a3e!2sSalta!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar" 
-                    class="w-[80%] h-[300px] block mx-auto pb-[30px] border-0" 
+                    class="w-full md:w-[90%] h-[350px] block mx-auto my-4 border-0 rounded-[14px] shadow-md" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
@@ -127,7 +129,7 @@
         </section>
         
         <!-- Enlace para volver al inicio -->
-        <a class="a-volver block mx-auto w-[105px] text-center mt-0 p-[10px] rounded-[10px] bg-[rgb(42,165,52)] text-white" href="#volver-inicio">Volver al inicio</a>
+        <a class="a-volver" href="#volver-inicio">Volver al inicio</a>
     </main>
 
     <footer>

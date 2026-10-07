@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misiones - Tierra de Selva y Cataratas</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -21,104 +23,104 @@
             </nav>
         </div>
         <div class="con-destinos">
-            <h3 class="text-[40px] text-[rgb(0,110,255)]">Misiones - Tierra de Selva y Cataratas</h3>
+            <h3 class="text-[34px] md:text-[40px]">Misiones - Tierra de Selva y Cataratas</h3>
             <p>Experimentá la magia de la selva misionera con un paquete especial de 4 días y 3 noches.</p>
             <p>Desde $780 USD por persona.</p>
-            <a id="a-buenos-aires" href="../../Reserva/reserva.html" class="inline-block px-[10px] py-[5px] bg-[rgb(0,140,255)] rounded-[10px] text-white hover:bg-[rgb(78,175,255)] hover:border hover:border-[rgb(0,140,255)]">¡Reservar ahora!</a>
+            <a id="a-buenos-aires" href="../../Reserva/reserva.html">¡Reservar ahora!</a>
         </div>
     </header>
-    <main class="bg-[#cccccc] p-[10px]">
+    <main class="bg-[#f7f3ec] p-[10px] md:p-6">
         <!-- SECCIÓN: Lugares turísticos -->
-        <section class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Lugares de turismo</h2>
+        <section class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Lugares de turismo</h2>
             
             <!-- ARTÍCULO: Cataratas del Iguazú -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/cataratas.jpg" alt="Cataratas del Iguazú" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/cataratas.jpg" alt="Cataratas del Iguazú" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Cataratas del Iguazú</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Cataratas del Iguazú</h3>
                     <p>Maravilla Natural del Mundo con 275 saltos de agua que alcanzan los 80 metros de altura. El circuito de pasarelas permite admirar la Garganta del Diablo, el salto más imponente. Parque Nacional protegido que alberga una biodiversidad única.</p>
                 </div>
             </article>
             
             <!-- ARTÍCULO: Ruinas de San Ignacio -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/ruinas.jpg" alt="Ruinas Jesuíticas de San Ignacio" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/ruinas.jpg" alt="Ruinas Jesuíticas de San Ignacio" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Ruinas Jesuíticas de San Ignacio</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Ruinas Jesuíticas de San Ignacio</h3>
                     <p>Las mejor conservadas de las misiones jesuíticas en Argentina, declaradas Patrimonio de la Humanidad. El espectáculo de luz y sonido nocturno revive la historia de los guaraníes y los sacerdotes jesuitas en el siglo XVII.</p>
                 </div>
             </article>
         </section>
 
         <!-- SECCIÓN: Historia de Misiones -->
-        <section id="historia" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Historia de Misiones</h2>
+        <section id="historia" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Historia de Misiones</h2>
             <p>La región fue originalmente habitada por los guaraníes. En el siglo XVII, los jesuitas fundaron 30 reducciones donde desarrollaron una singular sociedad guaraní-cristiana. Tras la expulsión de los jesuitas en 1767, las misiones cayeron en abandono. En 1881 se creó el Territorio Nacional de Misiones, que se convirtió en provincia en 1953. Hoy es conocida por su selva paranaense (una de las áreas con mayor biodiversidad del planeta), su producción de yerba mate y sus impresionantes paisajes.</p>
         </section>
 
         <!-- SECCIÓN: Evento destacado -->
-        <section id="eventos" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Evento destacado</h2>
+        <section id="eventos" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Evento destacado</h2>
             
             <!-- ARTÍCULO: Fiesta Nacional de la Orquídea -->
-            <article class="flex flex-wrap justify-evenly items-center bg-[#f0f0f0] rounded-[10px] p-[30px_20px] m-[10px]">
+            <article class="tarjeta flex flex-wrap justify-evenly items-center gap-6 bg-[#fbf8f3] border border-[#eee3d0] rounded-[14px] p-[25px_20px] my-5">
                 <div class="w-full md:w-[500px]">
-                    <img src="img/fiesta.webp" alt="Fiesta Nacional de la Orquídea" class="w-full max-w-[500px] rounded-[20px]">
+                    <img src="img/fiesta.webp" alt="Fiesta Nacional de la Orquídea" class="w-full max-w-[500px] h-[300px] object-cover rounded-[14px] shadow-lg">
                 </div>
                 <div class="w-full md:w-[500px]">
-                    <h3 class="text-[25px] text-[rgb(92,157,255)]">Fiesta Nacional de la Orquídea (noviembre)</h3>
+                    <h3 class="text-[25px] text-[#ef6c00] mb-2">Fiesta Nacional de la Orquídea (noviembre)</h3>
                     <p>Celebración en Montecarlo que exhibe más de 3,000 especies de orquídeas nativas. Incluye exposiciones florales, shows musicales, degustación de comidas típicas y elección de la Reina Nacional de la Orquídea.</p>
                 </div>
             </article>
         </section>
 
         <!-- SECCIÓN: Clima -->
-        <section id="clima" class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Clima en Misiones</h2>
+        <section id="clima" class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Clima en Misiones</h2>
             <p>Clima subtropical sin estación seca, con alta humedad y abundantes precipitaciones.</p>
-            <table class="border border-gray-400 w-[90%] mx-auto my-4">
+            <table class="tabla-clima w-[95%] max-w-[800px] mx-auto my-5 shadow-md">
                 <thead>
                     <tr>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Estación</th>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Temperatura promedio</th>
-                        <th class="border border-gray-400 bg-[rgb(11,113,172)] text-white p-2">Clima</th>
+                        <th class="bg-[#1565c0] text-white p-3">Estación</th>
+                        <th class="bg-[#1565c0] text-white p-3">Temperatura promedio</th>
+                        <th class="bg-[#1565c0] text-white p-3">Clima</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Verano</td>
-                        <td class="border border-gray-400 p-2 text-center">25-35°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Caluroso y húmedo con lluvias frecuentes</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Verano</td>
+                        <td class="border-b border-gray-200 p-3 text-center">25-35°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Caluroso y húmedo con lluvias frecuentes</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Otoño</td>
-                        <td class="border border-gray-400 p-2 text-center">18-28°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Templado con menor humedad</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Otoño</td>
+                        <td class="border-b border-gray-200 p-3 text-center">18-28°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Templado con menor humedad</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Invierno</td>
-                        <td class="border border-gray-400 p-2 text-center">10-22°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Suave con noches frescas</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Invierno</td>
+                        <td class="border-b border-gray-200 p-3 text-center">10-22°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Suave con noches frescas</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-400 p-2 text-left">Primavera</td>
-                        <td class="border border-gray-400 p-2 text-center">20-30°C</td>
-                        <td class="border border-gray-400 p-2 text-center">Cálido con floración de la selva</td>
+                        <td class="border-b border-gray-200 p-3 text-left">Primavera</td>
+                        <td class="border-b border-gray-200 p-3 text-center">20-30°C</td>
+                        <td class="border-b border-gray-200 p-3 text-center">Cálido con floración de la selva</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- SECCIÓN: Mapa de ubicación -->
-        <section class="bg-white p-[10px] rounded-[10px] mb-[15px]">
-            <h2 class="text-[30px] text-[rgb(0,102,255)]">Ver en el mapa</h2>
+        <section class="bg-white p-5 md:p-8 rounded-[16px] mb-6 shadow-md max-w-[1150px] mx-auto">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Ver en el mapa</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1155272.089925348!2d-55.8664555!3d-26.875227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f811245d5a15a9%3A0xf5e53c20a9b2f8e8!2sMisiones!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar" 
-                    class="w-[80%] h-[300px] block mx-auto pb-[30px] border-0" 
+                    class="w-full md:w-[90%] h-[350px] block mx-auto my-4 border-0 rounded-[14px] shadow-md" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
@@ -127,7 +129,7 @@
         </section>
         
         <!-- Enlace para volver al inicio -->
-        <a class="a-volver block mx-auto w-[105px] text-center mt-0 p-[10px] rounded-[10px] bg-[rgb(42,165,52)] text-white" href="#volver-inicio">Volver al inicio</a>
+        <a class="a-volver" href="#volver-inicio">Volver al inicio</a>
     </main>
 
     <footer>

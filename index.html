@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViajArte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -26,69 +28,80 @@
             <h3>¡Tu aventura argentina comienza aquí!</h3>
             <a href="destinos/destinos.html">¡Explorar ahora!</a>
         </div>
-        </section>
     </header>
     <main>
-        <section class="bg-[rgb(250,108,250)] p-5">
-            <h2 class="text-[30px] text-center font-['Verdana'] mb-[15px]">¡Bienvenidos a ViajArte!</h2>
-            <p class="text-center font-['Verdana'] mb-[15px] text-white italic font-medium"> En ViajArte creemos que cada viaje es mucho más que un simple recorrido: es una experiencia que despierta emociones, crea recuerdos inolvidables y pinta momentos únicos en el lienzo de tu vida. Somos una agencia de viajes apasionada por el arte de explorar. Te invitamos a descubrir destinos mágicos, culturas fascinantes y paisajes de ensueño, con la calidez y creatividad que nos representa.</p>
-            <h3 class="text-[20px] text-right italic text-[rgb(60,163,211)] font-black mr-[35px]">Viajá con nosotros. Viajá con arte.</h3>
+        <section class="bg-white px-5 py-12 text-center">
+            <div class="max-w-[850px] mx-auto">
+                <h2 class="titulo-seccion text-[32px] text-[#1565c0]">¡Bienvenidos a ViajArte!</h2>
+                <p class="text-[18px] mb-[15px]">En ViajArte creemos que cada viaje es mucho más que un simple recorrido: es una experiencia que despierta emociones, crea recuerdos inolvidables y pinta momentos únicos en el lienzo de tu vida. Somos una agencia de viajes apasionada por el arte de explorar. Te invitamos a descubrir destinos mágicos, culturas fascinantes y paisajes de ensueño, con la calidez y creatividad que nos representa.</p>
+                <h3 class="text-[22px] italic text-[#ef6c00] mt-4">Viajá con nosotros. Viajá con arte.</h3>
+            </div>
         </section>
 
-        <section class="bg-[rgb(255,186,57)] text-white p-5 flex flex-wrap justify-evenly items-center">
-                <div class=" w-full md:w-[500px]">
-                    <h2 class="text-[30px] text-[rgb(0,132,255)]">¿Listo para descubrir la esencia de Argentina?</h2>
-                    <h4 class="text-[20px]">Bienvenidos a un viaje por los rincones más asombrosos del país</h4>
-                    <ul class="list-none">
-                        <li><strong class="text-[rgb(0,81,255)]">Paisajes únicos:</strong> Descubrirás lugares que solo Argentina puede ofrecer, desde el imponente Glaciar Perito Moreno hasta las coloridas Quebradas de Humahuaca, pasando por las Cataratas del Iguazú, una de las maravillas naturales del mundo.</li>
-                        <li><strong class="text-[rgb(0,81,255)]">Cultura viva:</strong> Conectarás con comunidades locales, gauchos en la Pampa, pueblos originarios en el Noroeste y artistas callejeros en Buenos Aires.</li>
-                        <li><strong class="text-[rgb(0,81,255)]">Aventura sin límites:</strong> Recorrerás rutas legendarias como la Ruta 40, navegarás por los canales de Tierra del Fuego y tal vez incluso bailarás un tango en La Boca.</li>
-                        <li><strong class="text-[rgb(0,81,255)]">Logística impecable:</strong> Viajarás con guías expertos y un equipo de apoyo que garantiza tu seguridad y comodidad en cada paso del camino.</li>
-                    </ul>
-                    <h3 class="text-[25px]">Una experiencia que va más allá del turismo</h3>
-                    <p>No solo visitarás lugares increíbles, sino que vivirás historias, sabores y sensaciones que te harán sentir Argentina como nunca antes.</p>
-                    <h4 class="text-[20px]">¿Estás listo para emprender este viaje inolvidable?</h4>
-                </div>
-                <div class="w-full md:w-[500px]">
-                    <img class="max-w-[500px]" src="img/colectivo.jpg" alt="" width="100%">
-                </div>
+        <section class="bg-[#fff3e0] px-5 py-12 flex flex-wrap justify-evenly items-center gap-8">
+            <div class="w-full md:w-[500px]">
+                <h2 class="text-[30px] text-[#1565c0] mb-2">¿Listo para descubrir la esencia de Argentina?</h2>
+                <h4 class="text-[19px] text-[#6d4c41] mb-4">Bienvenidos a un viaje por los rincones más asombrosos del país</h4>
+                <ul class="list-none space-y-3 mb-5">
+                    <li class="bg-white rounded-[10px] p-3 border-l-4 border-[#ffc107] shadow-sm"><strong class="text-[#ef6c00]">Paisajes únicos:</strong> Descubrirás lugares que solo Argentina puede ofrecer, desde el imponente Glaciar Perito Moreno hasta las coloridas Quebradas de Humahuaca, pasando por las Cataratas del Iguazú, una de las maravillas naturales del mundo.</li>
+                    <li class="bg-white rounded-[10px] p-3 border-l-4 border-[#ffc107] shadow-sm"><strong class="text-[#ef6c00]">Cultura viva:</strong> Conectarás con comunidades locales, gauchos en la Pampa, pueblos originarios en el Noroeste y artistas callejeros en Buenos Aires.</li>
+                    <li class="bg-white rounded-[10px] p-3 border-l-4 border-[#ffc107] shadow-sm"><strong class="text-[#ef6c00]">Aventura sin límites:</strong> Recorrerás rutas legendarias como la Ruta 40, navegarás por los canales de Tierra del Fuego y tal vez incluso bailarás un tango en La Boca.</li>
+                    <li class="bg-white rounded-[10px] p-3 border-l-4 border-[#ffc107] shadow-sm"><strong class="text-[#ef6c00]">Logística impecable:</strong> Viajarás con guías expertos y un equipo de apoyo que garantiza tu seguridad y comodidad en cada paso del camino.</li>
+                </ul>
+                <h3 class="text-[24px] text-[#1565c0]">Una experiencia que va más allá del turismo</h3>
+                <p>No solo visitarás lugares increíbles, sino que vivirás historias, sabores y sensaciones que te harán sentir Argentina como nunca antes.</p>
+                <h4 class="text-[19px] font-bold">¿Estás listo para emprender este viaje inolvidable?</h4>
+            </div>
+            <div class="w-full md:w-[500px]">
+                <img class="w-full max-w-[500px] mx-auto rounded-[16px] shadow-xl rotate-1" src="img/colectivo.jpg" alt="Colectivo de viaje">
             </div>
         </section>
-        <section class="p-5">
-            <h2 class="text-[30px] text-[rgb(0,132,255)]">Lugares de Argentina</h2>
-            <div class="flex overflow-x-auto gap-[10px] p-[10px] w-full mr-[10px]">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje1.webp" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje2.webp" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje3.jpg" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje4.jpg" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje5.jpg" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje6.webp" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje7.jpg" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje8.webp" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje9.jpeg" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje10.webp" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje11.webp" alt="" width="200" height="200">
-                <img class="rounded-[15px]" src="img/paisajes/paisaje12.jpg" alt="" width="200" height="200">
+
+        <section class="bg-white px-5 py-12">
+            <h2 class="titulo-seccion text-[30px] text-[#1565c0]">Lugares de Argentina</h2>
+            <p class="text-gray-500">Deslizá para ver más fotos &rarr;</p>
+            <div class="galeria flex overflow-x-auto gap-4 p-[10px] w-full">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje1.webp" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje2.webp" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje3.jpg" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje4.jpg" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje5.jpg" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje6.webp" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje7.jpg" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje8.webp" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje9.jpeg" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje10.webp" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje11.webp" alt="Paisaje de Argentina">
+                <img class="rounded-[15px] shadow-md" src="img/paisajes/paisaje12.jpg" alt="Paisaje de Argentina">
             </div>
         </section>
-        <section class="bg-[rgb(250,86,86)] text-white p-5">
-            <h2 class="text-[30px] text-[rgb(0,132,255)]">Testimonios de Clientes</h2>
-            <ul class="flex flex-wrap justify-evenly items-center">
-                <div class="w-full md:w-[500px]">
-                    <li class="list-none italic"><img src="img/clientes/testimonio-1.png" alt="" width="90px"><br><strong class="text-[rgb(0,81,255)]">María S. (Buenos Aires & Delta del Tigre)</strong><br>"Nunca pensé que Buenos Aires me iba a sorprender tanto. Recorrimos los cafés históricos de San Telmo, bailamos tango en La Boca y luego nos relajamos en el Delta del Tigre, navegando entre sus canales. ¡Fue como vivir dos países en uno! Los guías conocían cada rincón secreto de la ciudad."</li>
-                </div>
-                <div class="w-full md:w-[500px]">
-                    <li class="list-none italic"><img src="img/clientes/testimonio-2.png" alt="" width="90px"><br><strong class="text-[rgb(0,81,255)]">Carlos L. (Cataratas del Iguazú & Misiones)</strong><br>"Las Cataratas son impresionantes, pero lo que más me emocionó fue la experiencia en la selva misionera. Caminamos de noche con guías locales que nos mostraron la fauna y nos contaron leyendas guaraníes. ¡Hasta vimos yacarés en el río! Una aventura total."</li>
-                </div>
-                <div class="w-full md:w-[500px]">
-                    <li class="list-none italic"><img src="img/clientes/testimonio-3.png" alt="" width="90px"><br><strong class="text-[rgb(0,81,255)]">Sofía M. (Salta & Quebrada de Humahuaca)</strong><br>"El norte argentino es mágico. Los colores de la Quebrada de Humahuaca parecen pintados a mano, y en Cafayate probamos los mejores vinos torrontés. Lo mejor fue compartir una tarde con una familia en Purmamarca, que nos enseñó a teñir lana con técnicas ancestrales. ¡Inolvidable!"</li>
-                </div>
-                <div class="w-full md:w-[500px]">
-                    <li class="list-none italic"><img src="img/clientes/testimonio-4.png" alt="" width="90px"><br><strong class="text-[rgb(0,81,255)]">Javier R. (Bariloche & Ruta de los Siete Lagos)</strong><br>"Hicimos la Ruta de los Siete Lagos en auto y fue un sueño. Lagos turquesa, bosques infinitos y paradas en chacras para comer el mejor chocolate artesanal. En Bariloche, el trekking al Refugio Frey nos dejó sin palabras. ¡Argentina es pura naturaleza en estado puro!"</li>         
-                </div>
+
+        <section class="bg-[#1565c0] text-white px-5 py-12">
+            <h2 class="text-[30px] text-[#ffc107] text-center mb-8">Testimonios de Clientes</h2>
+            <ul class="flex flex-wrap justify-center gap-6">
+                <li class="tarjeta list-none bg-white text-[#2d2d2d] rounded-[16px] p-6 w-full md:w-[480px] shadow-lg">
+                    <img class="w-[80px] h-[80px] rounded-full object-cover border-4 border-[#ffc107] mb-3" src="img/clientes/testimonio-1.png" alt="María S.">
+                    <strong class="text-[#1565c0] block mb-2">María S. (Buenos Aires & Delta del Tigre)</strong>
+                    <p class="italic">"Nunca pensé que Buenos Aires me iba a sorprender tanto. Recorrimos los cafés históricos de San Telmo, bailamos tango en La Boca y luego nos relajamos en el Delta del Tigre, navegando entre sus canales. ¡Fue como vivir dos países en uno! Los guías conocían cada rincón secreto de la ciudad."</p>
+                </li>
+                <li class="tarjeta list-none bg-white text-[#2d2d2d] rounded-[16px] p-6 w-full md:w-[480px] shadow-lg">
+                    <img class="w-[80px] h-[80px] rounded-full object-cover border-4 border-[#ffc107] mb-3" src="img/clientes/testimonio-2.png" alt="Carlos L.">
+                    <strong class="text-[#1565c0] block mb-2">Carlos L. (Cataratas del Iguazú & Misiones)</strong>
+                    <p class="italic">"Las Cataratas son impresionantes, pero lo que más me emocionó fue la experiencia en la selva misionera. Caminamos de noche con guías locales que nos mostraron la fauna y nos contaron leyendas guaraníes. ¡Hasta vimos yacarés en el río! Una aventura total."</p>
+                </li>
+                <li class="tarjeta list-none bg-white text-[#2d2d2d] rounded-[16px] p-6 w-full md:w-[480px] shadow-lg">
+                    <img class="w-[80px] h-[80px] rounded-full object-cover border-4 border-[#ffc107] mb-3" src="img/clientes/testimonio-3.png" alt="Sofía M.">
+                    <strong class="text-[#1565c0] block mb-2">Sofía M. (Salta & Quebrada de Humahuaca)</strong>
+                    <p class="italic">"El norte argentino es mágico. Los colores de la Quebrada de Humahuaca parecen pintados a mano, y en Cafayate probamos los mejores vinos torrontés. Lo mejor fue compartir una tarde con una familia en Purmamarca, que nos enseñó a teñir lana con técnicas ancestrales. ¡Inolvidable!"</p>
+                </li>
+                <li class="tarjeta list-none bg-white text-[#2d2d2d] rounded-[16px] p-6 w-full md:w-[480px] shadow-lg">
+                    <img class="w-[80px] h-[80px] rounded-full object-cover border-4 border-[#ffc107] mb-3" src="img/clientes/testimonio-4.png" alt="Javier R.">
+                    <strong class="text-[#1565c0] block mb-2">Javier R. (Bariloche & Ruta de los Siete Lagos)</strong>
+                    <p class="italic">"Hicimos la Ruta de los Siete Lagos en auto y fue un sueño. Lagos turquesa, bosques infinitos y paradas en chacras para comer el mejor chocolate artesanal. En Bariloche, el trekking al Refugio Frey nos dejó sin palabras. ¡Argentina es pura naturaleza en estado puro!"</p>
+                </li>
             </ul>
         </section>
-      </main>
+    </main>
       <footer>
         <div class="flex-box">
             <div>

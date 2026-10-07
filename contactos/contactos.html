@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -26,64 +28,63 @@
             <h3 class="text-[25px]">¡Tu aventura argentina comienza aquí!</h3>
             <a href="../destinos/destinos.html">¡Explorar ahora!</a>
         </div>
-        </section>
     </header>
-    <main>
-        <section id="contacto" class="bg-[rgb(36,36,36)] p-5 rounded-[20px] max-w-[500px] mx-auto">
-            <h2 class="text-[rgb(0,132,255)] text-[30px]">Formulario de contacto</h2>
-            <p class="text-white mb-4">¡Nos encantaría saber de ti! Completa este formulario y te responderemos en menos de 24 horas para ayudarte a planificar tu próxima aventura con el toque artístico que nos caracteriza.</p>
+    <main class="px-4 py-12">
+        <section id="contacto" class="bg-white p-6 md:p-8 rounded-[20px] max-w-[560px] mx-auto shadow-xl border-t-8 border-[#ffc107]">
+            <h2 class="titulo-seccion text-[#1565c0] text-[30px]">Formulario de contacto</h2>
+            <p class="mb-6 text-gray-600">¡Nos encantaría saber de ti! Completa este formulario y te responderemos en menos de 24 horas para ayudarte a planificar tu próxima aventura con el toque artístico que nos caracteriza.</p>
             <form class="space-y-4">
                 <div>
-                    <label for="nombre" class="block text-white mb-1">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3" class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                    <label for="nombre" class="block font-semibold mb-1">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3" class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300">
                 </div>
                     
                 <div>
-                    <label for="apellido" class="block text-white mb-1">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required minlength="3" class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                    <label for="apellido" class="block font-semibold mb-1">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required minlength="3" class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300">
                 </div>
                     
                 <div>
-                    <p class="text-white mb-1">Sexo:</p>
+                    <p class="font-semibold mb-1">Sexo:</p>
                     <div class="flex gap-4">
                         <div class="flex items-center">
-                            <input type="radio" name="sexo" id="femenino" value="femenino" class="mr-1">
-                            <label for="femenino" class="text-white">Femenino</label>
+                            <input type="radio" name="sexo" id="femenino" value="femenino" class="mr-1 accent-[#ef6c00]">
+                            <label for="femenino">Femenino</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="radio" name="sexo" id="maculino" value="masculino" class="mr-1">
-                            <label for="masculino" class="text-white">Masculino</label>
+                            <input type="radio" name="sexo" id="masculino" value="masculino" class="mr-1 accent-[#ef6c00]">
+                            <label for="masculino">Masculino</label>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <label for="email" class="block text-white mb-1">Correo electronico:</label>
-                    <input type="email" id="email" name="email" required class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                    <label for="email" class="block font-semibold mb-1">Correo electronico:</label>
+                    <input type="email" id="email" name="email" required class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300">
                 </div>
                     
                 <div>
-                    <label for="telefono" class="block text-white mb-1">Telefono:</label>
-                    <input type="tel" id="telefono" name="telefono" required class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                    <label for="telefono" class="block font-semibold mb-1">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300">
                 </div>
                 
                 <div>
-                    <p class="text-white mb-1">Preferencia de contacto:</p>
+                    <p class="font-semibold mb-1">Preferencia de contacto:</p>
                     <div class="flex gap-4">
                         <div class="flex items-center">
-                            <input type="checkbox" id="pref-email" name="preferencia" value="email" class="mr-1">
-                            <label for="pref-email" class="text-white">Email</label>
+                            <input type="checkbox" id="pref-email" name="preferencia" value="email" class="mr-1 accent-[#ef6c00]">
+                            <label for="pref-email">Email</label>
                         </div>
                         <div class="flex items-center">
-                            <input type="checkbox" id="pref-telefono" name="preferencia" value="telefono" class="mr-1">
-                            <label for="pref-telefono" class="text-white">Teléfono</label>
+                            <input type="checkbox" id="pref-telefono" name="preferencia" value="telefono" class="mr-1 accent-[#ef6c00]">
+                            <label for="pref-telefono">Teléfono</label>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <label for="asuntos" class="block text-white mb-1">Asunto</label>
-                    <select name="asunto" id="asuntos" required class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none">
+                    <label for="asuntos" class="block font-semibold mb-1">Asunto</label>
+                    <select name="asunto" id="asuntos" required class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300">
                         <option value="">Seleccione una opcion</option>
                         <option value="consulta_general">Consulta general</option>
                         <option value="cotizacion_viaje">Cotización de viaje</option>
@@ -99,13 +100,13 @@
                 </div>
 
                 <div>
-                    <label for="mensaje" class="block text-white mb-1">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" required rows="5" class="bg-gray-600 text-white w-full p-2 rounded border-none focus:outline-none"></textarea>
+                    <label for="mensaje" class="block font-semibold mb-1">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required rows="5" class="campo bg-[#f4f6f9] w-full p-2.5 rounded-[8px] border border-gray-300"></textarea>
                 </div>
                 
                 <div class="flex gap-4">
-                    <button type="submit" class="bg-[rgb(25,150,0)] text-white px-4 py-2 rounded-[10px] border-none">Enviar</button>
-                    <button type="reset" class="bg-[rgb(255,33,33)] text-white px-4 py-2 rounded-[10px] border-none">Borrar</button>
+                    <button type="submit" class="boton bg-[#1565c0] text-white px-6 py-2 rounded-[25px] border-none">Enviar</button>
+                    <button type="reset" class="boton bg-gray-300 text-[#2d2d2d] px-6 py-2 rounded-[25px] border-none">Borrar</button>
                 </div>
             </form>
         </section>
